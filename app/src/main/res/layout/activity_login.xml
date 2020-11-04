@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ui.LoginActivity">
+
+    <include
+        android:id="@+id/id_toolbar"
+        layout="@layout/bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_toolbar"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/id_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/id_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:hint="Password" />
+        <Button
+            android:id="@+id/id_login_button"
+            android:layout_width="match_parent"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@color/green_900"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:id="@+id/id_forgot_password"
+            android:textStyle="bold"
+            android:textColor="@color/green_900"
+            android:text="Forgot Your Password?"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
